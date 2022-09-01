@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coketail Db</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-5xl">Cocktail Db</h1>
+
+    </header>
+    <section class="p-5">
+        <input id="text-field" type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+        <button onclick="searcCocktail()" class="btn btn-outline btn-primary">Button</button>
+
+    </section>
+    <main class="p-5">
+        <div id="card-container" class="grid grid-cols-4 gap-4">
+            
+        </div>
+    </main>
+    <section>
+        <h1 id="not-found" class="text-3xl text-center "></h1>
+    </section>
+    <section>
+        <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+            <div class="modal-box">
+                 <div id="modal-body">
+                      
+                 </div>
+                <div class="modal-action">
+                <label for="my-modal" class="btn">Yay!</label>
+                </div>
+            </div>
+            </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
